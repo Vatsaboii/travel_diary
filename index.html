@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earth Explorer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.95.0/Cesium.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.95.0/Widgets/widgets.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="cesiumContainer"></div>
+
+    <button id="sidebar-toggle">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <div id="sidebar">
+      <h2>Saved Locations</h2>
+      <div id="pins-list"></div>
+    </div>
+
+    <div id="info-panel">
+      <h2>Location Information</h2>
+      <div id="coordinates"></div>
+      <div id="location-info"></div>
+      <div id="weather-info"></div>
+      <div id="wiki-info"></div>
+      <button id="add-pin">Save Location</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
